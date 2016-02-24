@@ -1,0 +1,336 @@
+<head>
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("420c2b1a1dbd55c65d2bd2419ff230b3");</script><!-- end Mixpanel -->
+
+
+<!-- track a thing with mixpanel: mixpanel.track("Video play"); -->
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>FitCat</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,150,200,300,400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  {{> header}}
+
+            {{renderPage}}
+
+</body>
+
+
+
+<template name="header">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">FitCat</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbutton" href="#about">Home</a>
+                    </li>
+                    <li>
+                        <a class="navbutton" href="#services">Features</a>
+                    </li>
+                    <li>
+                        <a class="navbutton" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+
+                        <h1>FitCat</h1>
+                        <h3>Get your cat into top condition. <br> FitCat is a community, an app and a device that helps you do just that.<br><br></h3>
+
+                        <div>
+                              {{> signup}}
+                        </div>
+                        <div class="row">
+                        <div class="col-lg-12">
+                        <br><h1><i class="fa fa-arrow-down"></i></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+        </div>
+    </div>
+</template>
+
+
+<template name ="socialWall">
+    {{#each images}}
+        {{> image}}
+    {{/each}}
+</template>
+
+<template name="image">
+
+    <li data-id="{{ _id }}"><img src="{{ images.standard_resolution.url }}" /></li>
+
+</template>
+
+
+
+
+<template name="landing">
+
+  <a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">No longer worry about your cat's health<br></h2>
+                    <p class="lead">FitCat tracks subtle changes, compares trends with similar cats to yours to spots trends to spot the first signs of illness before you can.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                    <img class="img-responsive" src="img/ipad.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Optimal diet tracking</h2>
+                    <p class="lead">Tailored diets for cat's breed age and activity level. No fuss, FitCat guides you through the process</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/dog.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Simple reccomendations to get them in even better shape</h2>
+                    <p class="lead">Big data analytics that power simple recommendations to keep your cat in the best shape, without fuss.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/phones.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">A community at your fingertips<br></h2>
+                    <p class="lead">Vetinary experts, breeders and regular people just like you to share tips, get advice.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/community.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <!-- /.content-section-a -->
+
+  <a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Connect with us</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Features</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; FitCat 2015. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</template>
+
+<template name="signup">
+  {{#if emailSubmitted }}
+  <div id="thanks">
+    <h1>Thank You!</h1>
+    Check your inbox to confirm your email
+  </div>
+  {{else }}
+    <form id="mailchimp-email-capture">
+      {{#if showBadEmail}}
+        {{> badEmail}}
+      {{else }}
+
+
+      {{/if}}
+<div class="row">
+<div class="col-md-3"></div>
+    <div class="col-md-6">      
+        <div class="well">    
+            <div class="input-prepend">
+                <input type="text" value="" class="" id="email-for-mailchimp" placeholder="Your email address..." size="30">
+              </div>
+              <input type="submit" value="Notify Me" name="submit" id="mailchimp-submit" class="btn btn-primary"><p class="help-block">Launching next year. Be the first to know.</p>
+            </div>    
+        </div>
+    </div>  
+
+<div class="row">
+<div class="col-md-3"></div>
+    <div class="col-md-6">      
+        <div class="well">    
+            <div class="input-prepend">
+                <input type="text" value="" class="" id="email-for-mailchimp" placeholder="Your email address..." size="30" describedby="sizing-addon1">
+              </div>
+              <input type="submit" value="Notify Me" name="submit" id="mailchimp-submit" class="btn btn-primary"><p class="help-block">Launching next year. Be the first to know.</p>
+            </div>    
+        </div>
+    </div> 
+
+
+
+
+
+
+
+
+
+    </form>
+  {{/if}}
+
+</template>
+
+<template name="badEmail">
+  <div id="email-submit-error" class="alert alert-danger">
+    Please enter a valid email
+  </div>
+</template>
+
+<template name="adminLogin">
+  {{> loginButtons}}
+</template>
+
+<template name="admin">
+  <!-- Many thanks to the FrozenRidge crew for the admin functionality -->
+  <!-- <a href = "http://frozenridge.co">FrozenRidge | Solving hard problems for business</a> -->
+
+  <h1>Administrators</h1>
+  {{> loginButtons}}
+
+  {{#if isAdmin}}
+  <div class="well top-buffer">
+   <h3>Signed up Customers</h3>
+    <table>
+      <tr><th>Customer Email</th><th>Referrer</th><th>Time</th></tr>
+      {{#each emails}}
+        <tr><td>{{ this.email }}</td><td>{{ this.referrer }}</td><td>{{ this.timestamp }}</td></tr>
+      {{/each }}
+    </table>
+  </div>
+  {{/if}}
+
+</template>

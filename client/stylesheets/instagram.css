@@ -1,0 +1,34 @@
+
+
+ul.slideshow {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul.slideshow li {
+    width: 0;
+    height: auto;
+    float: left;
+    list-style-type: none;
+    margin-bottom: -5px;
+    transition: transform .2s ease-out;
+    z-index: 1;
+}
+
+ul.slideshow li:hover {
+    transform: scale(3);
+    z-index: 99999;
+}
+
+ul.slideshow li img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s ease-out, width 1s ease-out;
+}
+
+ul.slideshow li:hover img {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}

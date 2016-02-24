@@ -1,0 +1,355 @@
+
+
+
+/* landing page css below */
+
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    },
+h1{},
+h2{},
+h3{},
+h4{},
+h5{},
+h6{}
+
+.topnav {
+    font-size: 24px; 
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color: #ffffff!important;
+    background-color: #0Ca5EE;
+    text-shadow: 0px 0px 0px rgba(0,0,0,0)!important;
+
+}
+
+.navbutton{
+    font-size: 18px; 
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color: #ffffff!important;
+    background-color: #0Ca5EE;
+    text-shadow: 0px 0px 0px rgba(0,0,0,0)!important;
+
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/bg4.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: bottom right; 
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    font-family: "Helvetica Neue","Lato",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 25.0vh;
+    color: #0Ca5EE;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}
+
+.intro-message > h3 {
+    font-family: "Helvetica Neue","Lato",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+}
+
+
+.input-prepend{
+    font-family: "Helvetica Neue","Lato",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    color: #0Ca5EE;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.well{
+
+    background: url(../img/boxbg2.png);
+
+
+}
+
+
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+
+    }
+
+    .intro-message > h1 {
+      font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;  
+        font-size: 10.0vh;
+   }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    background-color: #efefef;
+}
+
+.content-section-b {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#configure-login-service-dialog {
+  -webkit-box-shadow: 0px 0px 10px #000;
+  -moz-box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 10px #000;
+}
+
+/* Admin page */
+.top-buffer {
+  margin-top: 25px;
+}
+
+
+
+#content-wrapper {
+  background-color:#fff;
+  padding:20px;
+  margin:0 -20px;
+  -webkit-border-radius:0 0 6px 6px;
+  -moz-border-radius:0 0 6px 6px;
+  border-radius:0 0 6px 6px;
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow:0 1px 2px rgba(0,0,0,0.15);
+  box-shadow:0 1px 2px rgba(0,0,0,0.15);
+}
+
+#welcome {
+  text-align:center;
+}
+
+#welcome .hero-unit {
+  background:url(./bg.png);
+  padding:40px;
+}
+
+
+
+#welcome #request-invite {
+  padding-top:20px;
+}
+
+#welcome #request-invite h1 {
+  color:#51A351;
+  margin-bottom:0;
+}
+
+#welcome #request-invite .alert-error {
+  position:relative;
+  top:-15px;
+  margin-bottom:0;
+}
+
+#welcome .help-block {
+  font-size:10px;
+  color:gray;
+  margin-top:15px;
+}
+
+#welcome #well {
+  margin-left:0;
+  text-align:left;
+}
+
+#welcome .span4 label {
+  font-size:16px;
+  font-weight:700;
+  color:#0073CC;
+  position:relative;
+  top:-15px;
+  margin-bottom: 10px; /* Total hack */
+}
+
+#welcome .span4.text_only {
+  margin-top:5px;
+}
+
+#email-submit-error {
+  position: relative;
+  top: -10px;
+  margin-bottom: 0px;
+}
+
+#welcome #thanks {
+  position:relative;
+  top:-5px;
+  left:5px;
+}
+
+.btn.loading {
+  background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(0.25,rgba(0,0,0,0.1)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(0,0,0,0.1)),color-stop(0.75,rgba(0,0,0,0.1)),color-stop(0.75,transparent),to(transparent));
+  background-image:-moz-linear-gradient(-45deg,rgba(0,0,0,0.1) 25%,transparent 25%,transparent 50%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.1) 75%,transparent 75%,transparent);
+  background-size:50px 50px;
+  -moz-background-size:50px 50px;
+  -webkit-background-size:50px 50px;
+  -webkit-animation:animate-stripes 2s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  from {
+    background-position:0 0;
+  }
+
+  to {
+    background-position:-50px 0;
+  }
+}
+
+
+
+
+
