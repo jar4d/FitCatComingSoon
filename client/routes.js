@@ -5,8 +5,6 @@
       path: '/',
     });
 
-
-
     // admin page
     this.route('admin', {
       onBeforeAction: function () {

@@ -1,3 +1,4 @@
+/*
 var clientId = Meteor.settings.InstagramKeys.clientId
 var clientSecret = Meteor.settings.InstagramKeys.clientSecret
 var instagram = new Instagram.createClient( clientId , clientSecret );
@@ -37,3 +38,4 @@ Meteor.methods({
         Instagrams.remove({ _id: id });
     }
 });
+*/

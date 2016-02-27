@@ -6,7 +6,6 @@
 insecure
 accounts-ui
 accounts-github
-bootstrap
 http
 iron:router
 
@@ -25,8 +24,12 @@ ejson
 spacebars
 check
 udondan:googlefonts
-huttonr:bootstrap3
 fortawesome:fontawesome
 kidovate:cycle
 mrt:instagram-wrapper
 percolate:momentum
+less
+huttonr:bootstrap3
+natestrauser:animate-css
+richsilv:owl-carousel
+tanis:bootstrap-social

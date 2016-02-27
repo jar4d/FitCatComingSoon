@@ -12,7 +12,6 @@ blaze@2.1.3
 blaze-html-templates@1.0.1
 blaze-tools@1.0.4
 boilerplate-generator@1.0.4
-bootstrap@1.0.1
 caching-compiler@1.0.0
 caching-html-compiler@1.0.2
 callback-hook@1.0.4
@@ -63,6 +62,7 @@ mobile-status-bar@1.0.6
 mongo@1.1.3
 mongo-id@1.0.1
 mrt:instagram-wrapper@0.0.1
+natestrauser:animate-css@3.5.1
 npm-mongo@1.4.39_1
 oauth@1.1.6
 oauth2@1.1.5
@@ -77,12 +77,14 @@ reactive-dict@1.1.3
 reactive-var@1.0.6
 reload@1.1.4
 retry@1.0.4
+richsilv:owl-carousel@0.1.0
 routepolicy@1.0.6
 service-configuration@1.0.5
 session@1.1.1
 spacebars@1.0.7
 spacebars-compiler@1.0.7
 standard-minifiers@1.0.2
+tanis:bootstrap-social@0.1.2
 templating@1.1.5
 templating-tools@1.0.0
 tracker@1.0.9

@@ -1,3 +1,13 @@
+// Github account usernames of admin users
+var ADMIN_USERS = ['jar4d'];
+function isAdmin() {
+  try {
+    return ADMIN_USERS.indexOf(Meteor.user().services.github.username) !== -1;
+  } catch(e) {
+    return false;
+  }
+}
+
          apiKey = Meteor.settings.mailchimpApiKey;
        listId = Meteor.settings.mailchimpListId; 
 

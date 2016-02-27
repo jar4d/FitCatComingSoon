@@ -1,0 +1,60 @@
+  <a  name="community"></a>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <h2 class="section-heading">A community at your fingertips<br></h2>
+                    <p class="lead">A community of cat owners. Share your latest snaps, compare stats and talk to other owners of the same breed. Get tips and advice from vetinary experts, breeders and experts. Contribute and win by getting your pet in the best shape possible.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/community.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+   <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">No longer worry about your cat's health</h2>
+                    <p class="lead">FitCat tracks vital health indicators for subtle changes. It uses big data to compare your cat's vital statistics with similar breeds to yours to make sure they are in top condition and spot telltale signs of illness before you can.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/pad.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+  <a  name="services"></a>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Optimal diet tracking</h2>
+                    <p class="lead">FitCat tailors a diet plan specifically for your cat's breed, age and activity level. It constantly monitors and analyses data to make sure your pet is in the best possible condition and feeds back progress to your mobile app.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                    <img class="img-responsive" src="img/cloud.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+ 

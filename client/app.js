@@ -51,8 +51,118 @@
     },
     emailSubmitted: function () {
       return Session.get("emailSubmitted");
-    }
+    },
+
+
+
+
+
+
+
+
+
+
+
   });
+
+  Template.landing.onRendered(function() { 
+    initSlider();
+  });
+
+
+initSlider = function() {
+    var time = 7; // time in seconds
+
+    var $progressBar,
+        $bar, 
+        $elem, 
+        isPause, 
+        tick,
+        percentTime;
+
+
+      var owl = $("#main-slider").find('.owl-carousel');
+
+      owl.owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    margin: 10,
+    //nav: true,
+    dots: false,
+    autoplayTimeout:7000,
+    onInitialized: progressBar,
+    onTranslated: moved,
+    onDrag: pauseOnDragging
+
+
+  }); 
+        console.log("initSlider");
+
+
+      //Init progressBar where elem is $("#owl-demo")
+      function progressBar(elem){
+        $elem = elem;//build progress bar elements
+        buildProgressBar();
+        start();//start counting
+      }
+   
+      //create div#progressBar and div#bar then append to $(".owl-carousel")
+      function buildProgressBar(){
+          $progressBar = $("<div>",{
+              id:"progressBar"
+          });
+          $bar = $("<div>",{
+              id:"bar"
+          });
+          $progressBar.append($bar).appendTo($("#main-slider"));
+      }
+   
+      function start() {
+        //reset timer
+        percentTime = 0;
+        isPause = false;
+        //run interval every 0.01 second
+        tick = Meteor.setInterval(interval, 10);
+      };
+   
+function interval() {
+    if(isPause === false){
+        percentTime += 1 / time;
+        
+        $bar.css({
+            width: percentTime+"%"
+        });
+        
+        // if percentTime is equal or greater than 100
+        if(percentTime >= 100){
+            // slide to next item 
+            $("#main-slider").trigger("next.owl.carousel");
+            percentTime = 0; // give the carousel at least the animation time ;)
+        }
+    }
+}
+   
+      //pause while dragging 
+      function pauseOnDragging(){
+        isPause = true;
+      }
+   
+      //moved callback
+      function moved(){
+        //clear interval
+        clearTimeout(tick);
+        //start again
+        start();
+      }
+
+}
+
+
+Template.signup.events({
+  onclick
+})
+
 
   Template.admin.helpers({
     showAdmin: function() {
@@ -68,6 +178,7 @@
 
 //social wall stuff
 
+/*
 
 // Remove items from the DOM when they are no longer on screen
 // Will stop the tab from crashing
@@ -101,7 +212,7 @@ Template.image.rendered = function() {
 
 }
 
-
+*/
 
 
 
