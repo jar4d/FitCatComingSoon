@@ -1,0 +1,9 @@
+{
+	"mailchimpApiKey": "9c280a1fa4b2bc239047113519eb2825-us12",
+	"mailchimpListId": "664320fb60",
+	
+	"InstagramKeys" : {
+    "clientId"        : "7039a8a1318f415eb28f52d88a61eec5",
+    "clientSecret"    : "5acd0318ce054e9d8cd00f70517152f5"
+	}
+}

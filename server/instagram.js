@@ -1,6 +1,6 @@
 /*
-var clientId = Meteor.settings.InstagramKeys.clientId
-var clientSecret = Meteor.settings.InstagramKeys.clientSecret
+var clientId = Meteor.settings.private.InstagramKeys.clientId
+var clientSecret = Meteor.settings.private.InstagramKeys.clientSecret
 var instagram = new Instagram.createClient( clientId , clientSecret );
 
 

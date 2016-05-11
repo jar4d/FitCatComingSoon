@@ -8,8 +8,8 @@ function isAdmin() {
   }
 }
 
-         apiKey = Meteor.settings.mailchimpApiKey;
-       listId = Meteor.settings.mailchimpListId; 
+         apiKey = Meteor.settings.private.mailchimpApiKey;
+       listId = Meteor.settings.private.mailchimpListId; 
 
   // Mailchimp API Call
   Meteor.methods({
